@@ -160,7 +160,7 @@ header > nav > a {
   border-radius: 3px;
 }
 .download-section {
-  /* width: 95%; */
+ 
   display: flex;
   margin: 5% 2%;
   display: flex;
@@ -211,7 +211,7 @@ form button {
   list-style: none;
 }
 .footers-right {
-  /* width: 400px; */
+
   color: #e9edff;
   padding-right: 3%;
   display: flex;
