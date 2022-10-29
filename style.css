@@ -6,9 +6,14 @@
   font-family: "Poppins", sans-serif;
   margin: 0%;
   padding: 0%;
+  font-size: 1.6rem;
 }
 body {
   position: absolute;
+  overflow-x: hidden;
+}
+html {
+  font-size: 62.2%;
 }
 header {
   width: 100vw;
@@ -26,15 +31,16 @@ header > nav {
   z-index: 200;
 }
 header > nav > a {
-  margin-right: 4vmin;
+  margin-right: 2.5rem;
   font-family: "Poppins", sans-serif;
   color: aliceblue;
+  font-size: 1.8rem;
 }
 .nav-item-active {
   background-color: aliceblue;
   border: 5px;
   color: blue;
-  padding: 6px 15px;
+  padding: 0.6rem 1.5rem;
   border-radius: 5px;
 }
 .logo {
@@ -48,21 +54,25 @@ header > nav > a {
   left: 5%;
   color: aliceblue;
 }
+.header-text > h2 {
+  font-size: 3rem;
+}
 .header-image {
   position: absolute;
-  top: 11%;
+  top: 13%;
   right: -1%;
   width: 37%;
 }
+
 .companies {
-  padding: 15px 0px;
+  padding: 1.5rem 0rem;
   margin-left: 3%;
 }
 .companies a {
   text-decoration: none;
   color: black;
   font-family: "Righteous";
-  font-size: 2.4vmin;
+
   margin-right: 2em;
 }
 .api {
@@ -74,26 +84,32 @@ header > nav > a {
   justify-content: center;
 }
 .api-heading {
-  margin-bottom: 40px;
+  margin-bottom: 4rem;
+  margin-left: 2rem;
 }
 .cards {
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  height: auto;
+  gap: 2rem;
 }
 .card {
-  width: 18%;
-
-  padding: 20px;
-  height: auto;
+  width: 15%;
+  padding: 1.5rem;
 }
+.card > h3 {
+  margin: 0.5rem 0rem;
+}
+
+.card-active > h3 {
+  margin: 0.5rem 0rem;
+}
+
 .card-active {
   box-shadow: 0px 2px 4px rgb(182, 175, 175);
-  padding: 20px;
+  padding: 1.5rem;
   border-radius: 5px;
 }
 .blog-heading {
@@ -113,33 +129,38 @@ header > nav > a {
   margin-bottom: 5%;
   outline: none;
   border: none;
-  box-shadow: 10px 10px 10px grey;
+  box-shadow: 10px 10px 10px rgb(118, 115, 115);
 }
 .blog-image {
   display: flex;
   order: 1;
   object-fit: cover;
-  margin-right: 40px;
+  margin-right: 4rem;
 }
 .blog-author {
   display: flex;
   order: 2;
-  margin-top: 5px;
-  width: 120px;
+  margin-top: 0.5rem;
+  width: 5rem;
+}
+.blog-author > b {
+  font-size: 1.2rem;
 }
 .blog-content {
   display: flex;
   flex-direction: column;
 
-  margin-top: 10px;
+  margin-top: 1rem;
   order: 4;
+  padding: 5px;
 }
+
 .blog-bottom {
   display: flex;
   order: 3;
   justify-content: flex-start;
   align-items: flex-start;
-  margin-right: 40px;
+  margin-right: 4rem;
   margin-left: 5px;
 }
 .faq-section {
@@ -150,25 +171,28 @@ header > nav > a {
 .faq-content {
   margin: 2% 3%;
 }
+.faq-content > h2 {
+  font-size: 2.5rem;
+}
+
 .faq-content button {
-  padding: 6px 20px;
+  padding: 0.6rem 2rem;
   border: none;
   outline: none;
   background-color: #5a31fc;
   color: aliceblue;
-  margin: 10px 0px;
+  margin: 1rem 0rem;
   border-radius: 3px;
 }
 .download-section {
- 
-  display: flex;
   margin: 5% 2%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 1rem;
 }
 form {
-  border-radius: 20px;
+  border-radius: 3rem;
   border: 2px solid gray;
   padding: 2px 2px;
   background-color: #e9edff;
@@ -176,13 +200,14 @@ form {
 form input {
   border: none;
   outline: none;
-  padding: 8px 30px;
+  padding: 0.8rem 3rem;
+  border-radius: 2rem;
 }
 form button {
   border: none;
   outline: none;
-  padding: 8px 20px;
-  border-radius: 20px;
+  padding: 0.8rem 2rem;
+  border-radius: 2rem;
   background-color: #3400ff;
   color: #e9edff;
 }
@@ -200,37 +225,53 @@ form button {
   align-items: flex-start;
 }
 .list {
-  width: 400px;
+  width: 40rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 2rem;
 }
 .list li {
   color: aliceblue;
   list-style: none;
 }
-.footers-right {
-
+.footer-right {
   color: #e9edff;
   padding-right: 3%;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
 }
 .logos-list {
-  width: 200px;
+  width: 20rem;
   display: flex;
-  justify-content: space-between;
+
+  gap: 4rem;
+  margin-top: 2rem;
+  list-style: none;
 }
-@media only screen and (max-width: 1134px) {
+.logos-list > li {
+  color: white;
+}
+
+@media only screen and (max-width: 1450px) {
+  .blog-card {
+    width: 60%;
+  }
+  .blog-cards {
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .blog-card {
+    width: 70%;
+  }
   .header-image {
     display: none;
   }
-  nav {
-    display: none;
-  }
+
   .header {
     width: 100vw;
   }
@@ -241,12 +282,11 @@ form button {
     display: none;
   }
 }
-@media only screen and (max-width: 1450px) {
-  .blog-card {
-    width: 100%;
-  }
-}
+
 @media only screen and (max-width: 800px) {
+  html {
+    font-size: 55%;
+  }
   .footer-section {
     flex-direction: column;
     text-align: center;
@@ -257,20 +297,26 @@ form button {
     flex-direction: column;
   }
   .card {
-    width: 80%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
   .card-active {
-    width: 80%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
   .blog-card {
     flex-direction: column;
   }
-  .blog-image > img {
-    object-fit: cover;
-  }
+
   .download-section {
     flex-direction: column;
-    height: 100px;
+    height: 10rem;
   }
   form {
     position: absolute;
@@ -291,8 +337,24 @@ form button {
     justify-content: center;
     align-items: center;
   }
-  .blog-card{
+  .blog-card {
     box-shadow: none;
     border-bottom: 2px solid rgb(77, 72, 72);
+  }
+}
+@media only screen and (max-width: 900px) {
+  .blog-card {
+    width: 90%;
+  }
+  header > nav {
+    display: none;
+  }
+  .footer-section {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 50%;
   }
 }
